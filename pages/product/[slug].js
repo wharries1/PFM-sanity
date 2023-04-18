@@ -9,10 +9,10 @@ import { Featured } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 import RelatedProducts from "../../components/RelatedProducts";
 
-const ProductDetails = ({ product }) => {
+const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
-  const { decQty, incQty, qty, onAdd, setShowCart, products } =
+  const { decQty, incQty, qty, onAdd, setShowCart } =
     useStateContext();
     console.log(products);
   return (
