@@ -7,7 +7,7 @@ import {
 import { client, urlFor } from "../../lib/client";
 import { Featured } from "../../components";
 import { useStateContext } from "../../context/StateContext";
-import RelatedProducts from "../../components/RelatedProducts";
+import RelatedProducts from "../../components";
 
 const ProductDetails = ({ product }) => {
   const { image, name, details, price } = product;
@@ -59,6 +59,7 @@ const ProductDetails = ({ product }) => {
         <h2>You might also like...</h2>
       </div>
       <RelatedProducts products={products} />
+      <Featured products={products} />
     </div>
   );
 };
