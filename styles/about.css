@@ -1,0 +1,22 @@
+.ws-about-item img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.video-container video{
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.ws-about-content{
+    margin-bottom: 50px;
+}
+
+.ws-page-container2{
+    margin-top: 200px;
+}
+
+.caption{
+    font-size: 28px;
+}
