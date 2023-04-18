@@ -7,7 +7,7 @@ import {
 import { client, urlFor } from "../../lib/client";
 import { Featured } from "../../components";
 import { useStateContext } from "../../context/StateContext";
-import RelatedProducts from "../../components";
+import RelatedProducts from "../../components/RelatedProducts";
 
 const ProductDetails = ({ product }) => {
   const { image, name, details, price } = product;
