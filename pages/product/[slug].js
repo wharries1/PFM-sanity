@@ -59,7 +59,6 @@ const ProductDetails = ({ product, products }) => {
       <div className="products-heading">
         <h2>You might also like...</h2>
       </div>
-      <RelatedProducts products={products} />
       <Featured products={products} />
     </div>
   );
