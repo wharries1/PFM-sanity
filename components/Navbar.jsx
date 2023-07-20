@@ -8,10 +8,11 @@ import Image from "next/image";
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 
-const Navbar = () => {
+const Navbar = ({products}) => {
+  console.log(products)
   const [open, setOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const { showCart, setShowCart, totalQuantities, products } = useStateContext();
+  const { showCart, setShowCart, totalQuantities, } = useStateContext();
   const items = products;
   console.log(items)
   const filteredItems =
