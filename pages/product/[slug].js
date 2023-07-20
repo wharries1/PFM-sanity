@@ -14,7 +14,6 @@ const ProductDetails = ({ product, products }) => {
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } =
     useStateContext();
-    console.log(products);
   return (
     <div>
       <div className="product-detail-container">
@@ -59,7 +58,7 @@ const ProductDetails = ({ product, products }) => {
       <div className="products-heading">
         <h2>You might also like...</h2>
       </div>
-      <Featured products={products} />
+      <RelatedProducts products={products} />
     </div>
   );
 };
